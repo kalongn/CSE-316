@@ -1,0 +1,38 @@
+.main-body-header {
+    padding: 12px 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#all-questions-header {
+    font-size: 2rem;
+}
+
+#main-body-header-2 {
+    border-bottom: 2px dashed var(--color-light-grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sorting-button-group {
+    padding: 5px 10px;
+    float: left;
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-invert-primary);
+    color: var(--color-invert-primary);
+    font-size: 16px;
+}
+
+.sorting-button-group:not(:last-child) {
+    border-right: none;
+}
+
+.sorting-button-group:hover {
+    background-color: var(--color-light-grey);
+}
+
+#sorting-button-group-container {
+    padding-right: 160px;
+}

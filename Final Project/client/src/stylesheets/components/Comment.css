@@ -1,0 +1,34 @@
+.comment-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: inherit;
+    border-bottom: 1px solid var(--color-hover-grey);
+}
+
+.comment-text {
+    flex-grow: 1;
+}
+
+.comment-answers-votes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-wrap: break-word;
+}
+
+.comment-answers-votes>button {
+    aspect-ratio: 1;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.comment-answers-votes>button:hover {
+    color: var(--color-blue);
+}
+
+.comment-time {
+    color: var(--color-grey);
+}

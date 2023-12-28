@@ -1,0 +1,10 @@
+.home-page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+span {
+    color: var(--color-blue);
+}

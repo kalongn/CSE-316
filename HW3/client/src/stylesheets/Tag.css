@@ -1,0 +1,37 @@
+#tag-body-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tag-body-items * {
+    text-align: center;
+}
+
+.border-dash {
+    width: 200px;
+    min-height: 120px;
+    gap: 0px;
+    border: 2px var(--color-dark-grey) dashed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.border-dash>button {
+    font-size: 1.75rem;
+    text-decoration: underline;
+    color: var(--color-deep-blue);
+    overflow-wrap: break-word;
+    border: none;
+    background-color: transparent;
+}
+
+.border-dash>button:hover {
+    opacity: 0.75;
+}
+
+.border-dash>div {
+    font-size: 1.25rem;
+}

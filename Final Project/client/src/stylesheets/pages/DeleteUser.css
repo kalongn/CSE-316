@@ -1,0 +1,41 @@
+.delete-page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+}
+
+.pop-up-confirm .question-button-wrapper {
+    justify-content: center;
+    gap: 32px;
+}
+
+.delete-page-wrapper .submit-button {
+    background-color: var(--color-orange);
+    font-size: 1.2rem;
+    min-width: 200px;
+}
+
+.pop-up-confirm {
+    min-width: 100%;
+    min-height: 100%;
+    backdrop-filter: blur(45px);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button.cancel {
+    background-color: var(--color-black);
+}
+.submit-button.cancel:hover {
+    filter: brightness(1.8);
+}
+
+.submit-button.delete:hover {
+    background-color: red;
+    filter: brightness(1.2);
+}

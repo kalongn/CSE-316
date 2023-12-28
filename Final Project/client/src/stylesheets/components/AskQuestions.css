@@ -1,0 +1,18 @@
+.ask-question-bttn {
+    border: none;
+    border-radius: 6px;
+    background-color: var(--color-orange);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    min-width: 84px;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.ask-question-bttn:hover {
+    filter: brightness(0.85);
+}
+
+.invis {
+    visibility: hidden;
+}

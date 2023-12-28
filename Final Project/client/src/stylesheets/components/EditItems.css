@@ -1,0 +1,13 @@
+.question-button-wrapper {
+    display: flex;
+    align-items: center;
+    min-width: calc(70% - 64px);
+}
+
+.delete-bttn {
+    background-color: var(--color-black);
+}
+
+.delete-bttn:hover {
+    filter: brightness(1.5);
+}

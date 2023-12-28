@@ -1,0 +1,25 @@
+.answer {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-dark-grey);
+    border-bottom: 2px var(--color-light-grey) dashed;
+    padding: 24px 30px 24px 30px;
+    min-height: 100px;
+    align-items: center;
+}
+
+.answer-description {
+    max-width: 800px;
+    font-size: large;
+    color: var(--color-invert-primary);
+}
+
+.answerer-username {
+    color: var(--color-green);
+}
+
+.answerer-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+}

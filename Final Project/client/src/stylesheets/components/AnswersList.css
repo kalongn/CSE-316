@@ -1,0 +1,19 @@
+.answer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: max(75%, 800px);
+    max-width: min-content;
+}
+
+.answers-stat-wrapper {
+    min-width: max(75%, 800px);
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+}
+
+.answer-list {
+    max-height: 400px;
+    overflow-y: scroll;
+}

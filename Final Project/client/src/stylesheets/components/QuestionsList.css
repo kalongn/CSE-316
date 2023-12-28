@@ -1,0 +1,13 @@
+.question-list {
+    flex-grow: 1;
+    min-width: max(75%, 800px);
+    max-height: 500px;
+    width: 800px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.question-list::-webkit-scrollbar {
+    display: none;
+}

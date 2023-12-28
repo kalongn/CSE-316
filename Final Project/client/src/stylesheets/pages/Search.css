@@ -1,0 +1,9 @@
+.search-page-wrapper {
+    align-items: center;
+    border-left: 1px solid var(--color-grey);
+    padding-bottom: 96px;
+}
+
+.no-result-padding {
+    padding: 64px;
+}

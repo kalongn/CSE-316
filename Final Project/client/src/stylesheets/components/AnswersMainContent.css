@@ -1,0 +1,17 @@
+.answers-main-content-wrapper {
+    padding: 16px 0px;
+    min-width: max(75%, 800px);
+    max-width: 800px;
+}
+
+.answers-text-content-wrapper {
+    padding-bottom: 16px;
+    width: inherit;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.answers-text {
+    line-height: 1.5rem;
+}

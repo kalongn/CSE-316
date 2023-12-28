@@ -1,0 +1,27 @@
+#sidenav {
+    height: 100%;
+    padding: 32px 0px 0px 0px;
+    border-right: 2px dashed var(--color-light-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidenav-button-group {
+    font-size: 1.5rem;
+    color: var(--color-deep-blue);
+    text-align: center;
+    padding: 18px 0px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--color-primary);
+    transition: background-color 150ms ease-in-out;
+}
+
+.sidenav-button-group:hover {
+    background-color: var(--color-lighter-grey);
+}
+
+.sidenav-button-highlighted {
+    background-color: var(--color-light-grey);
+}

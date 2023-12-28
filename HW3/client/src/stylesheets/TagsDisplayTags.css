@@ -1,0 +1,8 @@
+#tag-body-tags {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 48px;
+    height: 65%;
+    overflow-y: scroll;
+}

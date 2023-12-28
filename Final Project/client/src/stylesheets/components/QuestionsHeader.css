@@ -1,0 +1,43 @@
+.Header-wrapper {
+    min-height: 108px;
+    min-width: max(75%,800px);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    border-bottom: 1px solid var(--color-grey);
+    padding: 16px 0px;
+}
+
+h2 {
+    display: inline-block;
+    margin: 0;
+}
+
+.Bottom-row-Header-Wrapper,
+.Top-row-Header-Wrapper {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Bottom-row-Header-Wrapper {
+    gap: 16px;
+}
+
+.Bottom-row-Header-Wrapper>*,
+.Top-row-Header-Wrapper>* {
+    padding: 10px;
+    min-width: 84px;
+}
+
+.filter-bttn {
+    border: none;
+    border-radius: 6px;
+    background-color: var(--color-hover-grey);
+}
+
+.filter-bttn:hover {
+    background-color: var(--color-grey);
+}

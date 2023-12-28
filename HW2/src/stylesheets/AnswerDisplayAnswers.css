@@ -1,0 +1,4 @@
+.answer-scoll-wrapper {
+    max-height: 25%;
+    overflow-y: scroll;
+}

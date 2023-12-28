@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Totally Real Stack OverFlow</title>
+  <link rel="icon" type="image/webp" href="./img/Fav-Icon.webp">
+  <link rel="stylesheet" href="./css/index.css">
+  <script type="module" src="./src/index.js"></script>
+</head>
+
+<body>
+  <div class="page-wrapper">
+
+    <!-- Header -->
+    <div id="header">
+      <div id="header-title" class="bold big-font">
+        Fake Stack OverFlow
+      </div>
+      <div id="header-search-form">
+        <input id="header-search-bar" type="text" placeholder="Search . . .">
+      </div>
+    </div>
+
+    <div class="page-wrapper-content">
+
+      <!-- Side navigation menu -->
+      <div id="sidenav" class="sidenav">
+        <!-- <a href="index.html">Questions</a> -->
+        <button onclick="questionButtonOnClick()" id="questions-button"
+          class="sidenav-button-group sidenav-button-highlighted">Questions</button>
+        <!-- <a>Tags</a> -->
+        <button onclick="tagsButtonOnClick()" id="tags-button" class="sidenav-button-group">Tags</button>
+      </div>
+
+      <!-- answers page -->
+      <div id="ans-page-wrapper">
+
+        <!-- answer page question description -->
+        <!-- <div id="ans-head">
+          <div id="ans-head-toprow">
+            <div id="ans-num" class="answerPg-bold asn-element-min-width">2 answers</div>
+            <div id="ansPg-qtitle" class="answerPg-bold">Programmatically navigate using React router</div>
+            <div id="ansPg-askQ"><button class="ask-question-button" type="button" onclick="askQuestion()">Ask Question</button></div>
+          </div>
+
+          <div id="ans-head-botrow">
+            <div id="ans-views" class="answerPg-bold asn-element-min-width">11 views</div>
+            <div id="ansPg-qDescription">
+              the alert shows the proper index for the li clicked, and when I
+              alert the variable within the last function I'm calling,
+              moveToNextImage(stepClicked), the same value shows but the
+              animation isn't happening. This works many other ways, but I'm
+              trying to pass the index value of the list item clicked to use for
+              the math to calculate.
+            </div>
+            <div id="ansPg-user-info">
+              <div id="ansPg-usrname" class="new-questions-page-important">JoJi John</div>
+              <div id="ansPg-askDate" class="date">asked 20 hours ago</div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- each individual answer template -->
+        <!-- <div class="answer">
+          <div class="answer-description">
+            React Router is mostly a wrapper around the history library. History handles
+            interaction witht he browser's window.history for you with its browswer and hash
+            histories.
+          </div>
+          <div class="answerer-info">
+            <div class="answerer-username">
+              hamkalo
+            </div>
+            <div class="date-answered">
+              answered Feb 11, 04:31
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- answer page to type a new answer -->
+      <div id="new-answer-page-wrapper" class="new-answer-page-wrapper">
+
+        <!-- <div class="new-questions-page-titles">
+          Username<span class="new-questions-page-important">*</span>
+        </div>
+        <div>
+          <input id="new-answer-username" class="new-questions-page-textboxes" type="text" maxlength="100">
+        </div>
+        <div id="new-question-username-error-msg" class="new-questions-page-error-message"></div>
+
+        <div class="new-questions-page-titles">
+          Answer Text<span class="new-questions-page-important">*</span>
+        </div>
+        <div>
+          <textarea id="new-answer-details" class="new-questions-page-textboxes" cols="113" rows="15"></textarea>
+        </div>
+        <div id="new-answer-details-error-msg" class="new-questions-page-error-message"></div>
+
+        <div class="new-questions-page-footer">
+          <div>
+            <button id="post-answer-button" class="post-question-button" type="button">Post Answer</button>
+          </div>
+          <div class="new-questions-page-bottom-text">
+            <span class="new-questions-page-important">* indicates mandatory fields</span>
+          </div>
+        </div> -->
+
+      </div>
+
+      <!-- new questions page -->
+      <div id="new-questions-page-wrapper" class="new-questions-page-wrapper">
+
+        <!-- <div class="new-questions-page-titles">
+          Question Title<span class="new-questions-page-important">*</span>
+        </div>
+        <div class="new-questions-page-subtitles">
+          Limit title to 100 characters or less
+        </div>
+        <div>
+          <input id="new-question-title" class="new-questions-page-textboxes" type="text" maxlength="100">
+        </div>
+        <div id="new-question-title-error-msg" class="new-questions-page-error-message">
+          
+        </div>
+
+        <div class="new-questions-page-titles">
+          Question Text<span class="new-questions-page-important">*</span>
+        </div>
+        <div class="new-questions-page-subtitles">
+          Add details
+        </div>
+        <div>
+          <textarea id="new-question-details" class="new-questions-page-textboxes" cols="113" rows="15"></textarea>
+        </div>
+        <div id="new-question-details-error-msg" class="new-questions-page-error-message">
+          
+        </div>
+
+        <div class="new-questions-page-titles">
+          Tags<span class="new-questions-page-important">*</span>
+        </div>
+        <div class="new-questions-page-subtitles">
+          Add keywords separated by whitespace
+        </div>
+        <div>
+          <input id="new-question-tags" class="new-questions-page-textboxes" type="text" maxlength="54">
+        </div>
+        <div id="new-question-tags-error-msg" class="new-questions-page-error-message">
+          
+        </div>
+
+        <div class="new-questions-page-titles">
+          Username<span class="new-questions-page-important">*</span>
+        </div>
+        <div>
+          <input id="new-question-username" class="new-questions-page-textboxes" type="text" maxlength="100">
+        </div>
+        <div id="new-question-username-error-msg" class="new-questions-page-error-message">
+          
+        </div>
+
+        <div class="new-questions-page-footer">
+          <div id="post-button-wrapper">
+            <button id = "post-question-button" type="button">Post Question</button>
+          </div>
+          <div id="new-questions-page-bottom-text">
+            <span class="new-questions-page-important">* indicates mandatory fields</span>
+          </div>
+        </div> -->
+
+      </div>
+
+      <!-- Main page content -->
+      <div id="main">
+
+        <!-- Main page heading -->
+        <div class="main-header">
+          <div class="main-body-header">
+            <h1 id="all-questions-header">All Questions</h1>
+            <button class="ask-question-button" type="button" onclick="askQuestion()">Ask Question</button>
+          </div>
+
+          <div id="main-body-header-2" class="main-body-header">
+            <h2><span id="question-counter">0</span> Questions</h2>
+
+            <div id="sorting-button-group-container">
+              <button onclick="newestButton()" class="sorting-button-group">Newest</button>
+              <button onclick="activeButton()" class="sorting-button-group">Active</button>
+              <button onclick="unansweredButton()" class="sorting-button-group">Unanswered</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="questions-wrapper">
+
+          <!-- each individual question template>
+              <div class="question">
+                <div class="question-info">
+    
+                  <div class="question-info-left">
+                    <div>
+                      <span id="question-answers-1">2</span> answers
+                    </div>
+                    <div>
+                      <span id="question-views-1">1</span> views
+                    </div>
+                  </div>
+    
+                  <div id="question-title-1" class="question-title bold title-font">
+                    Programmatically navigate using React router
+                  </div>
+    
+                  <div class="question-info-right">
+                    <span id="question-username" class="question-user-name">Joji John</span> asked <span
+                      id="question-time">15 minutes ago</span>
+                  </div>
+    
+                </div>
+                <div id="question-tags" class="question-tags">
+                  <button class="question-tag">
+                    react
+                  </button>
+                  <button class="question-tag">
+                    javascript
+                  </button>
+                </div>
+              </div>
+              -->
+          <!-- </div> -->
+
+          <!-- Searching if no question appeared
+                <div class='question-not-found bold big-font'>No Question Found.</div>
+              -->
+
+        </div>
+      </div>
+
+
+
+      <!-- Tag page content -->
+      <div id="tag-main">
+        <div id="tag-main-header" class="main-body-header">
+          <h2 class="tag-body-header"><span id="tag-counter">0</span> Tags</h2>
+          <h1 class="tag-body-header" id="tag-questions-header">All Tags</h1>
+          <button class="ask-question-button" type="button" onclick="askQuestion()">Ask Question</button>
+        </div>
+
+        <div id="tag-body-tags">
+
+          <!--
+              <div class="tag-body-items">
+                <div class="border-dash">
+                  <a>shared-preference</a>
+                  <div><span>1 </span>questions</div>
+                </div>
+              </div>
+            -->
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+</html>

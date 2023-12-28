@@ -1,0 +1,13 @@
+.add-comment-bttn {
+    border: none;
+    border-radius: 6px;
+    background-color: var(--color-dark-grey);
+    color: rgb(255, 255, 255);
+    padding: 6px;
+    min-width: 84px;
+    font-weight: normal;
+}
+
+.add-comment-bttn:hover {
+    filter: brightness(1.2);
+}
