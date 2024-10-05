@@ -1,20 +1,20 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Fake Stack OverFlow",
+  "name": "Stack OverFlow Clone",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "Fav-Icon.webp",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
+      "src": "Fav-Icon.webp",
+      "type": "image/webg",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
+      "src": "Fav-Icon.webp",
+      "type": "image/webg",
       "sizes": "512x512"
     }
   ],
